@@ -19,6 +19,7 @@ body {
 }
 
 .board {
+	z-index: 1001;
 	height: 300px;
 	width: 300px;
 
