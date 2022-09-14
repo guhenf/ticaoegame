@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: 'Oxanium', cursive;
 }
 
 body {
@@ -144,26 +144,48 @@ body {
 	z-index: 1001;
 }
 
-/* .winningsDiv {
+.winningsDiv {
+	width: 160px;
 	background: rgba(255, 255, 255, 0.25);
 	box-shadow: 0 8px 32px 0 rgba(35, 73, 135, 0.35);
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(13.5px);
 	border-radius: 2px;
 	border: 1px solid rgba(255, 255, 255, 0.2);
-	padding: 16px 25px;
+	padding: 16px;
 	font-size: 14px;
 }
 
-.winningsDiv.P1 {
+.containerWinning {
+	width: 320px;
+	display: flex;
+	justify-content: space-evenly;
 	position: absolute;
 	bottom: 10px;
 	left: 50%;
 	transform: translateX(-50%);
 }
+
+.restartScoreboard {
+	width: 56px;
+	height: 56px;
+	background: rgba(255, 255, 255, 0.25);
+	box-shadow: 0 8px 32px 0 rgba(35, 73, 135, 0.35);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(13.5px);
+	border-radius: 100%;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .winningsDiv.P2 {
 	position: absolute;
 	top: 10px;
 	right: 50%;
 	transform: rotate(180deg) translate(-50%);
-} */
+}
+
+.winningsCountP1,
+.winningsCountP2 {
+	font-size: 18px;
+	margin-left: 15px;
+}
