@@ -71,6 +71,7 @@ body {
 	width: calc(85px * 0.02);
 	height: calc(85px * 0.9);
 	background-color: #000;
+	transition: 0.3s;
 }
 
 .cell.x::before,
@@ -176,6 +177,11 @@ body {
 	border-radius: 100%;
 	border: 1px solid rgba(255, 255, 255, 0.2);
 	cursor: pointer;
+}
+
+.restartScoreboard:hover {
+	transition: 0.3s;
+	background: rgba(255, 255, 255, 0.1);
 }
 
 .winningsDiv.P2 {
