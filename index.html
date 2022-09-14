@@ -10,22 +10,29 @@
 	<body>
 		<div class="table">
 			<div class="board">
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
+				<div id="a1" class="cell"></div>
+				<div id="a2" class="cell"></div>
+				<div id="a3" class="cell"></div>
+				<div id="b1" class="cell"></div>
+				<div id="b2" class="cell"></div>
+				<div id="b3" class="cell"></div>
+				<div id="c1" class="cell"></div>
+				<div id="c2" class="cell"></div>
+				<div id="c3" class="cell"></div>
 			</div>
 		</div>
 
-		<div class="boxMessage">
-			<div class="winnerMessage">
-				<span>You win!</span>
-				<button>Restart</button>
+		<!-- <div class="winningsDiv P1">
+			Rounds won:<span id="winningsCountP1"></span>
+		</div>
+		<div class="winningsDiv P2">
+			Rounds won:<span id="winningsCountP2"></span>
+		</div> -->
+
+		<div class="containerMessage">
+			<div class="boxMessage">
+				<span class="roundMessage"></span>
+				<button class="roundRestart">Restart</button>
 			</div>
 		</div>
 	</body>
