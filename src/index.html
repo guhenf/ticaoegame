@@ -5,6 +5,12 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oxanium&display=swap"
+			rel="stylesheet"
+		/>
 		<title>TICAOE</title>
 	</head>
 	<body>
@@ -22,19 +28,23 @@
 			</div>
 		</div>
 
-		<!-- <div class="winningsDiv P1">
-			Rounds won:<span id="winningsCountP1"></span>
+		<div class="containerWinning">
+			<div class="winningsDiv P1">
+				Rounds won:<span class="winningsCountP1">0</span>
+			</div>
+			<button class="restartScoreboard">Reset Score</button>
 		</div>
+
 		<div class="winningsDiv P2">
-			Rounds won:<span id="winningsCountP2"></span>
-		</div> -->
+			Rounds won:<span class="winningsCountP2">0</span>
+		</div>
 
 		<div class="containerMessage">
 			<div class="boxMessage">
 				<span class="roundMessage"></span>
-				<button class="roundRestart">Restart</button>
+				<button class="roundRestart">Again!</button>
 			</div>
 		</div>
 	</body>
-	<script src="/index.js"></script>
+	<script src="index.js"></script>
 </html>
