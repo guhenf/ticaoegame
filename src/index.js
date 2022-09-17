@@ -24,7 +24,8 @@ const winnerCombinations = [
 ]
 
 const start = () => {
-	currentTurn = false
+
+	currentTurn = !currentTurn
 
 	for (const cell of cells) {
 		cell.classList.remove('o')
@@ -55,8 +56,8 @@ const endGame = (draw) => {
 	if (draw) {
 		roundMessage.innerHTML = 'Draw!'
 	} else {
-		roundMessage.innerHTML = currentTurn ? 'O Win!' : 'X Win!'
-		if (!currentTurn) {
+		roundMessage.innerHTML = currentTurn ? 'X Win!' : 'O Win!'
+		if (currentTurn) {
 			console.log(currentTurn, winsP1)
 			winsP1++
 			winningsCountP1.innerHTML = winsP1
@@ -75,7 +76,7 @@ const setFirstPlayer = () => {
 	board.classList.remove('x')
 	board.classList.remove('o')
 
-	if (currentTurn) {
+	if (!currentTurn) {
 		board.classList.add('o')
 	} else {
 		board.classList.add('x')
@@ -93,7 +94,7 @@ const cellMark = (cell, playToAdd) => {
 
 const handleClick = (e) => {
 	const cell = e.target
-	const playToAdd = currentTurn ? 'o' : 'x'
+	const playToAdd = currentTurn ? 'x' : 'o'
 
 	cellMark(cell, playToAdd)
 
@@ -109,7 +110,7 @@ const handleClick = (e) => {
 	}
 }
 
-const winnerCounter = () => {
+const restartWinnerCounter = () => {
 	winsP1 = 0
 	winningsCountP1.innerHTML = winsP1
 
@@ -117,6 +118,6 @@ const winnerCounter = () => {
 	winningsCountP2.innerHTML = winsP2
 }
 
-restartScoreboard.addEventListener('click', winnerCounter)
+restartScoreboard.addEventListener('click', restartWinnerCounter)
 
 start()
